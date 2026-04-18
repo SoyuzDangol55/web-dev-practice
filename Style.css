@@ -54,3 +54,36 @@ body{
     color: black;
     background-color: brown;
 }
+
+.weatherbody{
+display:flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+flex-direction:column;
+margin-block:20px;
+}
+.weatherbody img{
+width:60%;
+}
+
+.weather-box{
+font-size: 30px;
+margin-block: 20px;
+text-align: center;
+}
+
+.weather-details{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    gap: 20px; /* 👈 THIS adds space between items */
+    margin-top:80px;
+    padding-left:20px;
+}
+.sunny, .wind{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size: larger;
+}
