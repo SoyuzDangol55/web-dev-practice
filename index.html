@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather app </title>
-    <link rel="StyleSheet" href="Style.css">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="searchbox">
-                <input type ="text" placeholder="Search" class="SearchBar">
-                <button class="button1">
+                <input type="text" placeholder="Search city..." class="SearchBar" id="SearchBar">
+                <button class="button1" id="button1">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
         </div>
         <div class="weatherbody">
-            <img src="/Images/sun.png" alt="Sunny" class="weather-image">
+            <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Sunny" class="weather-image" id="weather-image">
             <div class="weather-box">
-                <p class="temperature">0<sup>°C</sup></p>
-                <p class="Description">Sunny</p>
+                <p class="temperature" id="temperature">0<sup>°C</sup></p>
+                <p class="Description" id="Description">Sunny</p>
             </div>
             <div class="weather-details">
                 <div class="sunny">
-                    <i class="fa-duotone fa-solid fa-droplet"></i>
+                    <i class="fa-solid fa-droplet"></i>
                     <div class="text">
-                        <span id = "humidity">20%</span>
+                        <span id="humidity">50%</span>
                         <p>Humidity</p>
                     </div>
                 </div>
@@ -35,12 +35,13 @@
                 <div class="wind">
                     <i class="fa-solid fa-wind"></i>
                     <div class="text">
-                        <span id = "wind-speed">12km/H</span>
+                        <span id="wind-speed">10 km/H</span>
                         <p>Wind Speed</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<script src="script.js"></script>
 </body>
 </html>
