@@ -8,7 +8,7 @@ const description = document.getElementById('Description');
 const humidity = document.getElementById('humidity');
 const wind = document.getElementById('wind-speed');
 
-const apikey = "Your_API_Key";//OpenWeather.com
+const apikey = "";//OpenWeather.com
 
 async function checkWeather(city) {
     if (!city || city.trim() === "") {
